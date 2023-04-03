@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ced4da;
+  width: 50%;
+  height: 50vh;
+  margin: 200px auto;
+  padding: 10px;
+  border-radius: 1000px;
+  animation: rotate 2s infinite;
+}
+.blue {
+  background-color: #228be6;
+  animation: pull1 2s infinite;
+}
+.green {
+  background-color: #40c057;
+  animation: pull1 2s infinite;
+}
+.yellow {
+  background-color: #fcc419;
+  animation: pull2 2s infinite;
+}
+.red {
+  background-color: red;
+  animation: pull2 2s infinite;
+}
+.div {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: 10px auto;
+  position: relative;
+}
+
+@keyframes pull1 {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 5px;
+  }
+}
+
+@keyframes pull2 {
+  from {
+    top: 200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
